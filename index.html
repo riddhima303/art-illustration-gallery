@@ -1,34 +1,183 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-        <a>Art/Illustration Gallery</a>
-        
+
+  <header class="site-header">
+    <h1>Art Gallery</h1>
     <nav>
-        <ul class="nav-list">
-        <li class="nav-list1">Home</li>
-        <li class="nav-list2">explore</li>
-        </ul>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Exhibitions</a></li>
 
+      <li class="lang-dropdown">
+
+        <input type="checkbox" id="lang-toggle" class="lang-toggle" />
+
+        <label for="lang-toggle" class="lang-label">EN <span class="caret">▾</span></label>
+
+
+        <div class="lang-panel">
+          <div class="lang-panel-inner">
+            <div class="lang-column left">
+              <h3>Language</h3>
+              <ul>
+                <li><a href="#">中文</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">हिन्दी</a></li>
+                <li><a href="#">Español</a></li>
+              </ul>
+            </div>
+
+            <div class="lang-column right">
+              <ul>
+                <li><a href="#">Français →</a></li>
+                <li><a href="#">Русский язык →</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <label for="lang-toggle" class="panel-close" aria-hidden="true">Close ✕</label>
+        </div>
+      </li>
+
+      </li>
+
+      
+      </ul>
     </nav>
-    </header>
-    <div class="images">
-   <div class="image1"><img class="img1" src="images/photo 3.webp"></div>
-   <div class="image2"> <img class="img2" src="images/photo 2.webp"></div>
-   <div class="image3"> <img class="img3" src="images/photo 1.webp"></div>
-   <div class="image4"><img class="img4" src="images/photo6.webp"></div>
-   </div>
-   <footer class="footer">
-    <p><a href="">Privacy</a>
-    <a href="">Terms</a>
-   </footer>
-</body>
+  </header>
 
+  <main>
+
+    <section class="image-section image1">
+      <div class="image-container">
+        <img src="images/photo 3.webp" alt="Art 1">
+      </div>
+      <div class="text-container">
+        <h2>Modern Expressions</h2>
+        <h3>Gustav Klimt's "Portrait of Amalie Zuckerkandl"</h3>
+        <p>The story of Gustav Klimt's "Portrait of Amalie Zuckerkandl" is one of unfinished art and tragic loss, as the portrait of Amalie Zuckerkandl, wife of urologist Otto Zuckerkandl, was left incomplete after Klimt's death in 1918. Amalie herself was later persecuted by the Nazis, and she and her daughter were murdered in the Bełżec extermination camp in 1942. </p>
+    </section>
+    <section class="museum-info">
+</section>
+
+
+    <section class="image-section image2 reverse">
+      <div class="image-container">
+        <img src="images/photo 2.webp" alt="Art 2">
+      </div>
+      <div class="text-container">
+        <h2>Nature's Story</h2>
+        <h3>Lake View, 1901</h3>
+        <p>"Lake View" is a 1901 painting by Finnish artist Akseli Gallen-Kallela, depicting a serene Finnish lake at sunset. The story behind the painting is that it represents Gallen-Kallela's deep connection to his homeland, capturing a tranquil, dreamlike scene with pastel hues reflecting on the water, a silhouetted island, and a foreground of trees</p>
+      </div>
+    </section>
+
+    <section class="info-section">
+  <div class="info-box">
+    <h2>Opening hours</h2>
+    <table>
+      <tr><td>Tuesday</td><td>10-18</td></tr>
+      <tr><td>Wednesday-Thursday</td><td>10-20</td></tr>
+      <tr><td>Friday</td><td>10-18</td></tr>
+      <tr><td>Saturday-Sunday</td><td>10-17</td></tr>
+      <tr><td>Monday</td><td>Closed</td></tr>
+    </table>
+  </div>
+
+  <div class="info-box">
+    <h2>Tickets</h2>
+    <p>Standard admission at the ticket office €22<br>
+    Standard admission online €20<br>
+    Discounted admission €12<br>
+    Under 18-year-olds €0<br>
+    Museum Card: free entry. Please show your card at the ticket office.</p>
+  </div>
+
+  <div class="info-box">
+    <h2>Arrival</h2>
+    <p>Kaivokatu 2<br>
+    00100 Helsinki<br>
+    Accessible entrance from Ateneuminkuja</p>
+  </div>
+</section>
+
+    <section class="image-section image3">
+      <div class="image-container">
+        <img src="images/photo 1.webp" alt="Art 3">
+      </div>
+      <div class="text-container">
+        <h2>Classical Perspectives</h2>
+        <h3>Gustav Klimt's "Mother with Two Children (Family)</h3>
+        <p>Gustav Klimt's painting Mother with Two Children (Family), created around 1909-1910, is a departure from his usual style, featuring a serene, intimate scene of a mother holding two sleeping children in somber colors, with no gold or decorative elements. The subjects' identities are unknown, though some speculate it could reflect his personal life, as Klimt had many children with various women but never married. The painting is celebrated for its poignant depiction of maternal love, protection, and the quiet connection between family members. </p>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="image-section image4 reverse">
+      <div class="image-container">
+        <img src="images/photo6.webp" alt="Art 4">
+      </div>
+      <div class="text-container">
+        <h2>Futuristic Art</h2>
+        <h3>Spring, study for the Jusélius Mausoleum Frescoes, 1903</h3>
+        <p>Spring, study for the Jusélius Mausoleum Frescoes, 1903, is a 1903 painting by Akseli Gallen-Kallela, created as a study for frescoes at the Sigrid Jusélius Mausoleum in Pori, Finland. The Art Nouveau and Symbolist-style tempera on canvas artwork is now housed in the Finnish National Gallery in Helsinki and depicts a scene with figures representing renewal, growth, and contemplation amidst a natural landscape.</p>
+      </div>
+    </section>
+    <section class="events-section">
+  <h2>Upcoming events</h2>
+
+  <div class="event-box">
+    <h4>Guided tours</h4>
+    <h3>Open guided tour of the collection exhibition A Question of Time</h3>
+    <p>with a museum ticket | in Finnish, in English, in Swedish, in Russian</p>
+    <p>2.11.2025 ⏰ 11:15–15:15</p>
+  </div>
+
+  <div class="event-box">
+    <h4>Other events</h4>
+    <h3>Drawing at an exhibition</h3>
+    <p>1.11.2025 ⏰ 14:30–16:30</p>
+  </div>
+
+  <div class="event-box">
+    <h4>Guided tours</h4>
+    <h3>Ateneum for kids: Guided tours</h3>
+    <p>with a museum ticket | in Finnish, suitable for children</p>
+    <p>1.11.2025 ⏰ 12–14</p>
+  </div>
+</section>
+
+  </main>
+  <div class="about-section">
+    <h2>About Our Gallery</h2>
+    <p>
+      Welcome to our Art Gallery — a space where creativity and imagination come alive.  
+      We showcase works by both established and emerging artists across different styles and eras.  
+      Our mission is to make art accessible, inspiring, and educational for everyone.
+    </p>
+
+    <p>
+      The gallery regularly hosts exhibitions, art workshops, and community events  
+      that celebrate artistic expression in all its forms — painting, sculpture, photography, and digital art.
+    </p>
+
+    <p>
+      Whether you are a passionate art lover or a curious visitor,  
+      we invite you to explore, learn, and be inspired.
+    </p>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 Art Gallery | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+  </footer>
+
+</body>
 </html>
