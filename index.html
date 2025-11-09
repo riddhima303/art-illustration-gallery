@@ -8,13 +8,15 @@
 </head>
 <body>
 
-  <header class="site-header">
+  <header class="site-header" id="home">
     <h1>Art Gallery</h1>
     <nav>
       <ul class="nav-list">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Exhibitions</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Current Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#exhibitions">Exhibitions</a></li>
 
       <li class="lang-dropdown">
 
@@ -156,7 +158,7 @@
 </section>
 
   </main>
-  <div class="about-section">
+  <div class="about-section" id="about">
     <h2>About Our Gallery</h2>
     <p>
       Welcome to our Art Gallery — a space where creativity and imagination come alive.  
@@ -175,9 +177,110 @@
     </p>
   </div>
 
+<section class="current-section" id="events">
+  <h2>Current Events</h2>
+  <div class="card-container scrollable">
+
+    <div class="card">
+      <img src="images/img1.webp" alt="Event 1">
+      <p class="category">GENERAL</p>
+      <h3>Autumn at the Ateneum is full of events</h3>
+      <p class="date">13.8.2025</p>
+    </div>
+
+    <div class="card">
+      <img src="images/img2.webp" alt="Event 2">
+      <p class="category">NEWS</p>
+      <h3>A bequest to expedite the conservation of Akseli Gallen-Kallela’s fresco sketches</h3>
+      <p class="date">14.5.2025</p>
+    </div>
+
+    <div class="card">
+      <img src="images/img3.webp" alt="Event 3">
+      <p class="category">NEWS</p>
+      <h3>Helene Schjerfbeck exhibition at The Metropolitan Museum</h3>
+      <p class="date">2.4.2025</p>
+    </div>
+
+    <div class="card">
+      <img src="images/img4.webp" alt="Event 4">
+      <p class="category">GENERAL</p>
+      <h3>New workshops for art lovers this autumn</h3>
+      <p class="date">10.9.2025</p>
+    </div>
+
+    <div class="card">
+      <img src="images/img5.webp" alt="Event 5">
+      <p class="category">NEWS</p>
+      <h3>Special guided tour for families and children</h3>
+      <p class="date">18.9.2025</p>
+    </div>
+
+    <div class="card">
+      <img src="images/img6.webp" alt="Event 6">
+      <p class="category">GENERAL</p>
+      <h3>Evening lectures on Finnish art history</h3>
+      <p class="date">25.9.2025</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-container">
+
+    <div class="footer-left">
+
+      <div class="footer-column">
+        <h3>Art Museum</h3>
+        <p>Kaivokatu 2<br>00100 Helsinki, Finland</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>About Us</h4>
+        <ul class="about-list">
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">For the media</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-column">
+        <h4>Info</h4>
+        <p>Tue-Fri 11:00-15:00<br>+358 294 500 401<br><a href="mailto:ainfo@ateneum.fi">ainfo@ateneum.fi</a></p>
+
+        <h4>Art Gallery sales</h4>
+        <p>+358 294 500 500 (Mon-Fri 10:00-14:00)<br><a href="mailto:sales@fng.fi">sales@fng.fi</a></p>
+
+        <p>Lost property: eOmistaja</p>
+      </div>
+    </div>
+
+<div class="footer-column footer-social">
+  <h3>Follow Us</h3>
+  <div class="social-links">
+    <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+    <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="#" class="social-btn youtube"><i class="fab fa-youtube"></i> YouTube</a>
+    <a href="#" class="social-btn tiktok"><i class="fab fa-tiktok"></i> TikTok</a>
+  </div>
+</div>
+
+
+    <div class="footer-column footer-policies">
+      <h3>Policies</h3>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+
+  </div>
+</footer>
+
   <footer class="footer">
     <p>© 2025 Art Gallery | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
   </footer>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </body>
 </html>
